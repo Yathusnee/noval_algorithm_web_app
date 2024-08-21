@@ -21,6 +21,8 @@ from sklearn.multioutput import MultiOutputClassifier, MultiOutputRegressor
 from sklearn.svm import SVC
 import pickle
 
+!pip install streamlit
+import streamlit as st
 
 # Mount Google Drive
 from google.colab import drive
@@ -80,7 +82,6 @@ def predict_outcome(pH_Reading, Ec_Reading, P_Reading, K_Reading, Texture_Readin
 
     return pd.concat([pred_classification_df, pred_regression_df, pred_lr_df], axis=1)
 
-import streamlit as st
 
 # Streamlit interface
 st.title("Hybrid Machine Learning Model Deployment")
