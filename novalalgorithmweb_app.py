@@ -21,7 +21,6 @@ from sklearn.multioutput import MultiOutputClassifier, MultiOutputRegressor
 from sklearn.svm import SVC
 import pickle
 
-!pip install streamlit
 
 # Mount Google Drive
 from google.colab import drive
