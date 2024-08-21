@@ -31,7 +31,8 @@ drive.mount('/content/drive')
 # Load the saved models and preprocessor
 try:
     # Update this path to point to your file in Google Drive
-    file_path ='/content/drive/MyDrive/SAV files/all_models_and_preprocessor.sav'
+    file_path  = 'all_models_and_preprocessor.sav'
+
     with open(file_path, 'rb') as file:
         models_and_preprocessor = pickle.load(file)
 except FileNotFoundError as e:
